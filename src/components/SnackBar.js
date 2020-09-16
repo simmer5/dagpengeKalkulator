@@ -1,4 +1,6 @@
 import React from "react";
+import PropTypes from "prop-types";
+
 import Snackbar from "@material-ui/core/Snackbar";
 import CloseIcon from "@material-ui/icons/Close";
 import IconButton from "@material-ui/core/IconButton";
@@ -30,6 +32,12 @@ const SnackBar = ({ handleClose, open }) => {
       />
     </div>
   );
+};
+SnackBar.propTypes = {
+  //opens SnackBar
+  open: PropTypes.bool,
+  //function handels close event
+  handleClose: PropTypes.func,
 };
 
 export default SnackBar;

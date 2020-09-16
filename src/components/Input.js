@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import TextField from "@material-ui/core/TextField";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -8,7 +9,7 @@ const useStyles = makeStyles({
   },
 });
 
-const Input = ({ handelInputChange, handelClick, error, helperText }) => {
+const Input = ({ handelInputChange, error, helperText }) => {
   const classes = useStyles();
   return (
     <TextField
@@ -20,10 +21,16 @@ const Input = ({ handelInputChange, handelClick, error, helperText }) => {
       className={classes.input}
       error={error}
       onChange={handelInputChange}
-      onClick={handelClick}
       name="intekter"
     />
   );
 };
-
+Input.propTypes = {
+  //text with year information under input
+  helperText: PropTypes.string,
+  //function to track changes on input
+  handelInputChange: PropTypes.func,
+  //sets error UI
+  error: PropTypes.bool,
+};
 export default Input;

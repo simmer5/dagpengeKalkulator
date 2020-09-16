@@ -9,6 +9,7 @@ import DagpengeKalkulator from "./components/DagpengeKalkulator";
 import "./App.css";
 
 const useStyles = makeStyles({
+  box: { backgroundColor: "#cfe8fc", padding: "1rem" },
   paper: {
     margin: "2rem",
     padding: "1rem",
@@ -21,7 +22,7 @@ function App() {
   return (
     <>
       <Container maxWidth="md">
-        <Box style={{ backgroundColor: "#cfe8fc", padding: "1rem" }}>
+        <Box className={classes.box}>
           <Paper
             className={classes.paper}
             elevation={3}
