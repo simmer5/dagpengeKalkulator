@@ -9,7 +9,10 @@ import DagpengeKalkulator from "./components/DagpengeKalkulator";
 import "./App.css";
 
 const useStyles = makeStyles({
-  box: { backgroundColor: "#cfe8fc", padding: "1rem" },
+  box: {
+    backgroundColor: "#cfe8fc",
+    padding: "1rem",
+  },
   paper: {
     margin: "2rem",
     padding: "1rem",

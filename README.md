@@ -1,68 +1,25 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Kodeoppgave:
 
-## Available Scripts
+I denne oppgaven skal du finne ut om en bruker kan få dagpenger, og hvor mye. Reglene er basert på de ekte dagpengereglene, men forenklet til å passe til oppgaven.
 
-In the project directory, you can run:
+Dagpenger er en ytelse man kan få hvis man har mistet jobben eller er permittert. For å være kvalifisert til å få dagpenger, må man ha hatt arbeidsinntekt minst det siste kalenderåret.
 
-### `yarn start`
+Når en bruker søker om dagpenger trenger de å vite om de har rett til dagpenger. Hvis de får det innvilget, trenger de også å vite hvor mye de får per dag, kalt dagsatsen. For å få innvilget dagpenger må man enten ha tjent til sammen over 3G de siste 3 kalenderårene, eller ha tjent over 1.5G forrige kalenderår.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Grunnbeløpet, kalt G, brukes til å beregne mange av NAVs ytelser. Grunnbeløpet justeres 1. mai hvert år og blir fastsatt etter trygdeoppgjøret.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Hvis man har tjent nok til å få dagpenger, er det et nytt regnestykke for å finne grunnlaget vi trenger for å beregne dagsatsen. Dette dagpengegrunnlaget er også basert på inntekten de siste tre årene. Dagpengegrunnlaget er den høyeste verdien av enten inntekten siste kalenderåret, eller gjennomsnittsinntekten de siste tre kalenderårene. Dagpengegrunnlaget kan ikke være høyere enn 6G.
 
-### `yarn test`
+For å finne dagsatsen deler man dagpengegrunnlaget på antall arbeidsdager i året, rundet opp. I NAV har vi definert antall arbeidsdager i et år til å være 260.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Oppgaven er:
 
-### `yarn build`
+-Ta imot tre år med inntekt, og returnere om bruker har rett på dagpenger. Inntekten er én sum per kalenderår.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-Hvis brukeren har rett på dagpenger skal du også returnere dagsatsen.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+-Bruk enten Java, JavaScript eller Kotlin
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-Besvarelsen skal inneholde tester
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+-Forøvrig velger du selv hvordan du vil løse oppgaven, men husk på at vi ønsker å se dine styrker, hvor dyktig du er og ditt potensiale innen utvikling.
