@@ -1,3 +1,5 @@
+# Proudly made with React and Material UI :)
+
 ## Kodeoppgave:
 
 I denne oppgaven skal du finne ut om en bruker kan få dagpenger, og hvor mye. Reglene er basert på de ekte dagpengereglene, men forenklet til å passe til oppgaven.
