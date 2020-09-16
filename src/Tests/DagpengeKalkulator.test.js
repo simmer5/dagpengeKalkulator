@@ -3,6 +3,7 @@ import { render, fireEvent, findByRole } from "@testing-library/react";
 
 import DagpengeKalkulator from "../components/DagpengeKalkulator";
 import InfoPaper from "../components/InfoPaper";
+import SnackBar from "../components/SnackBar";
 
 describe("test of the main component DagpengeKalkulator", () => {
   test("Displays form", () => {
@@ -36,6 +37,22 @@ describe("test of the main component DagpengeKalkulator", () => {
     expect(Inputs[2]).toHaveValue();
   });
 
+  test("should check if error SnackBar apears if input has letter", () => {
+    const { getByTestId, queryAllByTestId } = render(<DagpengeKalkulator />);
+
+    const Inputs = queryAllByTestId("input");
+    fireEvent.change(Inputs[0], { target: { value: "w" } });
+    expect(findByRole(SnackBar)).toBeInTheDocument;
+  });
+
+  test("should check if error SnackBar apears if input has numbers and letters", () => {
+    const { getByTestId, queryAllByTestId } = render(<DagpengeKalkulator />);
+
+    const Inputs = queryAllByTestId("input");
+    fireEvent.change(Inputs[0], { target: { value: "400w000" } });
+    expect(findByRole(SnackBar)).toBeInTheDocument;
+  });
+
   test("should check if message apears after Kalkulere button is clicked", () => {
     const { getByTestId, queryAllByTestId, getByText, find } = render(
       <DagpengeKalkulator />
@@ -45,4 +62,14 @@ describe("test of the main component DagpengeKalkulator", () => {
     fireEvent.click(submit);
     expect(findByRole(InfoPaper)).toBeInTheDocument;
   });
+
+  //   test("should check if message apears after Kalkulere button is clicked", () => {
+  //     const { getByTestId, queryAllByTestId, getByText, find } = render(
+  //       <DagpengeKalkulator />
+  //     );
+
+  //     const submit = getByTestId("submit");
+  //     fireEvent.click(submit);
+  //     expect(findByRole(InfoPaper)).toBeInTheDocument;
+  //   });
 });
