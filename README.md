@@ -1,4 +1,8 @@
-# Proudly made with React and Material UI :) 
+# Proudly made with React and Material UI :)
+
+## Demo:
+
+https://simmer5.github.io/dagpengeKalkulator/
 
 ## Kodeoppgave:
 
@@ -21,7 +25,3 @@ Oppgaven er:
 -Hvis brukeren har rett på dagpenger skal du også returnere dagsatsen.
 
 -Bruk enten Java, JavaScript eller Kotlin
-
--Besvarelsen skal inneholde tester
-
--Forøvrig velger du selv hvordan du vil løse oppgaven, men husk på at vi ønsker å se dine styrker, hvor dyktig du er og ditt potensiale innen utvikling.
