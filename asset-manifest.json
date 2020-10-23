@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/dagpengeKalkulator/static/css/main.5f361e03.chunk.css",
+    "main.js": "/dagpengeKalkulator/static/js/main.d60698ba.chunk.js",
+    "main.js.map": "/dagpengeKalkulator/static/js/main.d60698ba.chunk.js.map",
+    "runtime-main.js": "/dagpengeKalkulator/static/js/runtime-main.03ffff27.js",
+    "runtime-main.js.map": "/dagpengeKalkulator/static/js/runtime-main.03ffff27.js.map",
+    "static/js/2.c5138438.chunk.js": "/dagpengeKalkulator/static/js/2.c5138438.chunk.js",
+    "static/js/2.c5138438.chunk.js.map": "/dagpengeKalkulator/static/js/2.c5138438.chunk.js.map",
+    "index.html": "/dagpengeKalkulator/index.html",
+    "precache-manifest.fde16bf1457efdf69775eebbe5b32993.js": "/dagpengeKalkulator/precache-manifest.fde16bf1457efdf69775eebbe5b32993.js",
+    "service-worker.js": "/dagpengeKalkulator/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/dagpengeKalkulator/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.c5138438.chunk.js.LICENSE.txt": "/dagpengeKalkulator/static/js/2.c5138438.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.03ffff27.js",
+    "static/js/2.c5138438.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.d60698ba.chunk.js"
+  ]
+}
